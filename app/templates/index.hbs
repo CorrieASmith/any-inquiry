@@ -1,10 +1,13 @@
 <h1>Welcome to Any Inquiry</h1>
+<br>
 
 <p>Submit your questions below and don't expect an answer until I figure out how to create many to many relationships with Ember. If you want to check out a Q&A forum with full functionality, you should just go to Quora.</p>
 
+<br>
 <ul>
   {{#each model as |question|}}
     {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+  <br>
   {{/each}}
 </ul>
 
