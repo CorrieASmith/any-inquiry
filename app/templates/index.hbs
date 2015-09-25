@@ -2,6 +2,12 @@
 
 <p>Submit your questions below and don't expect an answer until I figure out how to create many to many relationships with Ember. If you want to check out a Q&A forum with full functionality, you should just go to Quora.</p>
 
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.author}}'s question: {{question.question}}</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}}
-<br>   
+<br>
 {{#link-to 'contact'}}Contact{{/link-to}}
