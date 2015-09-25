@@ -4,7 +4,7 @@
 
 <ul>
   {{#each model as |question|}}
-    <li>{{question.author}}'s question: {{question.question}}</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
 
