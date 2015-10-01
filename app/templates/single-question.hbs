@@ -2,3 +2,12 @@
 <h5>by {{model.author}}</h5>
 <h6>{{model.details}}</h6>
 <br>
+
+{{new-answer saveAnswer="saveAnswer" question=model}}
+<br>
+
+<ul>
+  {{#each model.answers as |answer|}}
+  {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+</ul>
