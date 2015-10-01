@@ -15,7 +15,7 @@ export default Ember.Component.extend({
       };
       this.set('addAnswer', false);
       this.set('name', "");
-      this.set('comment', "");
+      this.set('answer', "");
       this.sendAction('saveAnswer', params);
     }
   }
