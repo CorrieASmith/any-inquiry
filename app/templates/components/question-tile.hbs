@@ -1,4 +1,5 @@
-<li>{{question.author}}'s question: {{question.question}}
+<li>
+  {{#link-to 'single-question' question.id}}{{question.question}}{{/link-to}}
   {{update-question model=question update="update"}}
   <button class="btn btn-danger btn-xs"{{action 'delete' question}}>Delete</button>
 </li>
