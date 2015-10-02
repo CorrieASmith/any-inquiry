@@ -1,6 +1,7 @@
 <h4>{{model.question}}</h4>
 <h5>by {{model.author}}</h5>
 <h6>{{model.details}}</h6>
+<p>Submitted on {{format-date question.date_added}}</p>
 <br>
 
 {{new-answer saveAnswer="saveAnswer" question=model}}
